@@ -1,4 +1,4 @@
-package banko.model;
+package banko.Servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -34,7 +34,7 @@ public class Servlet extends HttpServlet {
 		
 
 		
-		 String json = new Gson().toJson(ClientManager.getAllTransacFromCompte());
+		 String json = new Gson().toJson(ClientManager.getAllTransac());
 		    response.setContentType("application/json");
 		    response.setCharacterEncoding("UTF-8");
 		    response.getWriter().write(json);
